@@ -201,7 +201,7 @@ function! airline#init#sections()
   endif
   if !exists('g:airline_section_z')
     if airline#util#winwidth() > 80
-      let g:airline_section_z = airline#section#create(['windowswap', 'obsession', '%3p%%'.spc, 'linenr', 'maxlinenr', spc.':%3v'])
+      let g:airline_section_z = airline#section#create(['windowswap', 'obsession', '%3p%%'.spc, 'linenr', 'maxlinenr', '%3v'.spc."\uE0A3"])
     else
       let g:airline_section_z = airline#section#create(['%3p%%'.spc, 'linenr',  ':%3v'])
     endif
